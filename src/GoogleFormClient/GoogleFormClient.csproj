@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <LangVersion>latest</LangVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <AssemblyName>GoogleFormClient</AssemblyName>
+        <RootNamespace>GoogleFormClient</RootNamespace>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+        <IsPackable>true</IsPackable>
+        <Authors>Pavel Kobyakov</Authors>
+        <Product>Google forms client</Product>
+        <PackageTags>googleForm;</PackageTags>
+        <Description>
+            This client library allows you to get the structure of a Google form with response IDs 
+            and also send these responses to the google forms.
+        </Description>
+        <Copyright> © 2023 Hangfire Pavel Kobyakov</Copyright>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HtmlAgilityPack" Version="1.11.52" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+      <PackageReference Include="System.Text.Json" Version="7.0.3" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <InternalsVisibleTo Include="GoogleFormClient.Tests" />
+    </ItemGroup>
+
+</Project>
