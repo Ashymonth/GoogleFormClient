@@ -5,7 +5,7 @@ This client library allows you to get the structure of a Google form with answer
 First of all, you need to add this client to your collection of services.
 
 ```
-services.AddGoogleFormssClient();
+services.AddGoogleFormsClient();
 ```
 
 Then you need to inject client into your service
