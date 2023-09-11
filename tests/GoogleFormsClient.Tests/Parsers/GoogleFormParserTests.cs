@@ -19,11 +19,11 @@ public class GoogleFormParserTests
     {
         public GoogleFormParserTheoryData()
         {
-            Add(File.ReadAllText("TestData\\GoogleFormPage.txt"),
-                File.ReadAllText("TestData\\GoogleFormPageResult.txt"));
-            
-            Add(File.ReadAllText("TestData\\GoogleFormPageWithCheckboxes.txt"),
-                File.ReadAllText("TestData\\GoogleFormPageWithCheckboxesResult.txt"));
+            Add(File.ReadAllText(Path.Combine("TestData", "GoogleFormPage.txt")),
+                File.ReadAllText(Path.Combine("TestData", "GoogleFormPageResult.txt")));
+
+            Add(File.ReadAllText(Path.Combine("TestData", "GoogleFormPageWithCheckboxes.txt")),
+                File.ReadAllText(Path.Combine("TestData", "GoogleFormPageWithCheckboxesResult.txt")));
         }
     }
 }

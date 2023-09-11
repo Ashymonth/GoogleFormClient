@@ -122,7 +122,7 @@ public class GoogleFormConverterTests
                 }
             };
 
-            Add(File.ReadAllText("TestData\\GoogleFormPageResult.txt"), googleForm);
+            Add(File.ReadAllText(Path.Combine("TestData", "GoogleFormPageResult.txt")), googleForm);
         }
     }
 }
