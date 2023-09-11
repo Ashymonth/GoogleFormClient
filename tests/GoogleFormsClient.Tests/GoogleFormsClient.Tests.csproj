@@ -25,22 +25,26 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="TestData\GoogleFormPage.txt">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-      <None Update="TestData\GoogleFormPageResult.txt">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-      <None Update="TestData\GoogleFormPageWithCheckboxes.txt">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-      <None Update="TestData\GoogleFormPageWithCheckboxesResult.txt">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
+      <ProjectReference Include="..\..\src\GoogleFormsClient\GoogleFormsClient.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\GoogleFormsClient\GoogleFormsClient.csproj" />
+      <None Remove="TestData\GoogleFormPageResult.txt" />
+      <Content Include="TestData\GoogleFormPageResult.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="TestData\GoogleFormPage.txt" />
+      <Content Include="TestData\GoogleFormPage.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="TestData\GoogleFormPageWithCheckboxes.txt" />
+      <Content Include="TestData\GoogleFormPageWithCheckboxes.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="TestData\GoogleFormPageWithCheckboxesResult.txt" />
+      <Content Include="TestData\GoogleFormPageWithCheckboxesResult.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
